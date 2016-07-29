@@ -1,0 +1,20 @@
+{
+  "service": {
+    "name": "edc",
+    "tags": [
+      "name=Impala",
+      "secure=false",
+      ""
+    ],
+    "address": "10.2.4.249",
+    "port": 8098,
+    "enableTagOverride": false,
+    "check": {
+      "id": "api",
+      "name": "Service health status",
+      "http": "http://10.2.4.249:8098/health",
+      "interval": "10s",
+      "timeout": "1s"
+    }
+  }
+}
